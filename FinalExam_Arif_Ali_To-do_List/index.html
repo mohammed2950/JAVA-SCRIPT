@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .heading{
+        height: 100px;
+        width: 100%;
+        background-color: blue;
+        text-align: center;
+    }
+    .searchbox{
+        height: 70px;
+        width: 100%;
+        background-color: black;
+        
+    }
+    .boxes{
+        margin-left: 20%;
+    }
+    h5{
+        color: blanchedalmond;
+    }
+    .addedrow{
+        background-color: cadetblue;
+        color: white;
+
+    }
+</style>
+<body>
+    <div class="heading">
+        <h2>To-do App</h2>
+        <h4>what do you need to do?</h4>
+    </div>
+    <div class="searchbox">
+        <div class="boxes">
+        <input type="text"  class="input" placeholder="findtodos" onkeyup="search(this)">
+        <input type="checkbox" onchange="hideall(event)"> 
+        <h5>Hide Completed</h5>
+    </div>
+    </div>
+    <br>
+    <div class="addedrow"></div>
+    <form onsubmit="addrow(event)">
+        <input type="text" class="row" >
+        <input type="button" value="submit">
+     </form>
+</body>
+<script src="index.js"></script>
+</html>
