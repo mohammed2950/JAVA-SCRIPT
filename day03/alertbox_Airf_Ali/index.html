@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    div {
+        padding: 20px;
+        display: inline-block;
+        border: 1px solid;
+        margin: 2px;
+    }
+
+</style>
+
+<body>
+    <div>Text1</div>
+    <div>Text2</div>
+    <div>Text3</div>
+    <div>Text4</div>
+    <div>Text5</div>
+    <div>Text6</div>
+    <div>Text7</div>
+    <div>Text8</div>
+    <div>Text9</div>
+    <div>Text10</div>
+</body>
+
+<!-- <script src="index.html"></script> -->
+<script>
+    /*
+        function show(ele) {
+            console.log(ele.innerText)
+        }
+        console.log(divs)
+    */
+
+    const divs = document.querySelectorAll('div');
+
+
+    divs.forEach(e => {
+        e.onclick = () => {
+            console.log(e.innerText)
+        }
+    })
+
+
+
+</script>
+
+</html>
